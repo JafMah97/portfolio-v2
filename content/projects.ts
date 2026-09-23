@@ -76,6 +76,7 @@ export const projects: Project[] = [
     outcomes: [
       { en: "Feed database queries cut from 112 to 12 per page", ar: "تقليل استعلامات قاعدة البيانات في الصفحة الرئيسية من 112 إلى 12" },
       { en: "Database latency cut from 407 ms to 15 ms by moving the database to the same region as the API", ar: "تقليل زمن الوصول لقاعدة البيانات من 407 إلى 15 ملّي ثانية بنقلها إلى نفس منطقة الخادم" },
+      { en: "Transactional emails (verification, password reset, magic link) delivered from a custom domain via Resend, with SPF and DKIM set up for reliable delivery", ar: "رسائل البريد التلقائية (تأكيد الحساب، استعادة كلمة المرور، الدخول بالرابط) تُرسل من دومين خاص عبر Resend، مع إعداد SPF و DKIM لضمان وصولها" },
     ],
   },
   {
