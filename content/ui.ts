@@ -17,8 +17,8 @@ export const ui = {
   skills: { en: "Skills", ar: "المهارات" },
   contact: { en: "Contact", ar: "تواصل" },
   contact_line: {
-    en: "The fastest way to reach me is email. I reply within two working days.",
-    ar: "أسرع طريقة للتواصل معي هي البريد الإلكتروني، وأرد خلال يومَي عمل.",
+    en: "The fastest way to reach me is email. I reply within 24 hours.",
+    ar: "أسرع طريقة للتواصل معي هي البريد الإلكتروني، وأرد خلال 24 ساعة.",
   },
   resume: { en: "Résumé (PDF)", ar: "السيرة الذاتية (PDF)" },
   present: { en: "Present", ar: "الآن" },

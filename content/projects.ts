@@ -75,7 +75,7 @@ export const projects: Project[] = [
     ],
     outcomes: [
       { en: "Feed database queries cut from 112 to 12 per page", ar: "تقليل استعلامات قاعدة البيانات في الصفحة الرئيسية من 112 إلى 12" },
-      { en: "CI builds and smoke-tests the production Docker image on every push", ar: "خط CI يبني صورة Docker الإنتاجية ويختبرها مع كل تعديل" },
+      { en: "Database latency cut from 407 ms to 15 ms by moving the database to the same region as the API", ar: "تقليل زمن الوصول لقاعدة البيانات من 407 إلى 15 ملّي ثانية بنقلها إلى نفس منطقة الخادم" },
     ],
   },
   {

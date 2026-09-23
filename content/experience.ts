@@ -10,7 +10,7 @@ export const experience: Job[] = [
     location: { en: "Latakia", ar: "اللاذقية" },
     description: {
       en: "Frontend on Filter Car, a multi-tenant SaaS for car service and wash businesses: data-fetching hooks over TanStack Query, the permission layer, and Arabic/English localization. The code and screens are confidential, so they are not shown here.",
-      ar: "واجهات منصة Filter Car، نظام SaaS متعدد المستأجرين لمراكز خدمة وغسيل السيارات: طبقة جلب البيانات فوق TanStack Query، وطبقة الصلاحيات، والتعريب بالعربية والإنجليزية. الكود والواجهات سرّية، لذلك لا أعرضها هنا.",
+      ar: "واجهات منصة Filter Car، نظام SaaS من نوع multi-tenant لمراكز خدمة وغسيل السيارات: طبقة جلب البيانات فوق TanStack Query، وطبقة الصلاحيات، والتعريب بالعربية والإنجليزية. الكود والواجهات سرّية، لذلك لا أعرضها هنا.",
     },
   },
   {
@@ -38,10 +38,10 @@ export const skills: SkillGroup[] = [
   },
   {
     title: { en: "Backend", ar: "الخادم" },
-    items: ["Node.js", "Fastify", "Prisma", "PostgreSQL", "Socket.IO"],
+    items: ["Node.js", "Fastify", "Prisma", "PostgreSQL", "Socket.IO", "C# (learning)"],
   },
   {
     title: { en: "Tools", ar: "الأدوات" },
-    items: ["Git", "GitHub Actions", "Docker", "Figma", "i18next (RTL)"],
+    items: ["Git", "GitHub", "Postman", "Figma", "i18next (RTL)"],
   },
 ];

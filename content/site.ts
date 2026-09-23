@@ -30,8 +30,8 @@ export const profile = {
     ar: "أبني واجهات ويب بـ React و Next.js، بالعربية والإنجليزية.",
   } satisfies Text,
   bio: {
-    en: "Frontend developer with about a year of production work: a multi-tenant SaaS platform and a client website in Qatar. I also built Konekta, a full-stack social network, to learn how the backend side works. I studied mechatronics engineering at Latakia University.",
-    ar: "مطوّر واجهات أمامية بخبرة سنة تقريبًا في مشاريع حقيقية: منصة SaaS متعددة المستأجرين وموقع لعميل في قطر. وبنيت كونكتا، شبكة اجتماعية كاملة من الواجهة حتى الخادم، لأتعلم كيف يعمل الجانب الخلفي. درست هندسة الميكاترونيكس في جامعة اللاذقية.",
+    en: "Frontend developer working with React, TypeScript and Next.js. One year of production experience on a multi-tenant SaaS platform in Arabic and English, and a business marketplace website for a client in Qatar. I'm now growing into a full software engineer: I have backend experience with Node.js, and I'm learning C# and .NET.",
+    ar: "مطوّر واجهات أمامية أعمل بـ React و TypeScript و Next.js. خبرة سنة في مشاريع حقيقية: منصة SaaS من نوع multi-tenant بالعربية والإنجليزية، وموقع منصة أعمال لعميل في قطر. أعمل حاليًا لأصبح مهندس برمجيات شاملًا: لدي خبرة في الباك إند بـ Node.js، وأتعلم C# و .NET.",
   } satisfies Text,
   /** Set to null to hide the availability line. */
   availability: {
