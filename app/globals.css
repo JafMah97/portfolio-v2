@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f5f4f0;
+  --color-ink: #171716;
+  --color-muted: #6c6b66;
+  --color-line: #dfddd6;
+  --color-accent: #b1451b;
+  --font-sans: var(--font-plex), var(--font-plex-ar), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+}
+
+/* Theme: follows the OS until the visitor picks one (html[data-theme], set by
+   the inline script in the layout and remembered in localStorage). */
+:root {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --color-paper: #121211;
+  --color-ink: #e9e7e1;
+  --color-muted: #8f8d87;
+  --color-line: #2b2a27;
+  --color-accent: #ee8a5e;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-paper: #121211;
+    --color-ink: #e9e7e1;
+    --color-muted: #8f8d87;
+    --color-line: #2b2a27;
+    --color-accent: #ee8a5e;
+    color-scheme: dark;
+  }
+}
+
+/* Show the icon for the theme you'd switch to. */
+.theme-sun {
+  display: none;
+}
+:root[data-theme="dark"] .theme-sun {
+  display: block;
+}
+:root[data-theme="dark"] .theme-moon {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-sun {
+    display: block;
+  }
+  :root:not([data-theme="light"]) .theme-moon {
+    display: none;
+  }
+}
+
+/* Arabic: Arabic face first, a touch more line height, never letter-spacing
+   (it breaks the joins between letters). */
+:lang(ar) {
+  --font-sans: var(--font-plex-ar), var(--font-plex), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: 0 !important;
+}
+:lang(ar) body {
+  line-height: 1.8;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Underlined text link used across the site. */
+@utility link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in oklab, currentColor 35%, transparent);
+  transition: text-decoration-color 150ms;
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
+
+/* Small uppercase label; uppercase has no meaning in Arabic, so skip it there. */
+@utility label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  &:lang(ar) {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    text-transform: none;
+  }
+}
