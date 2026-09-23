@@ -117,3 +117,28 @@ body {
     text-transform: none;
   }
 }
+
+/* A soft accent glow rising from the bottom corner where reading starts:
+   bottom-left → top-right in English, bottom-right → top-left in Arabic. */
+:root {
+  --glow: color-mix(in oklab, var(--color-accent) 7%, transparent);
+}
+:root[data-theme="dark"] {
+  --glow: color-mix(in oklab, var(--color-accent) 11%, transparent);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --glow: color-mix(in oklab, var(--color-accent) 11%, transparent);
+  }
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(to top right, var(--glow), transparent 60%);
+}
+[dir="rtl"] body::before {
+  background: linear-gradient(to top left, var(--glow), transparent 60%);
+}
