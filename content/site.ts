@@ -15,7 +15,7 @@ export const site = {
     { label: "X", href: "https://x.com/JafarMah97" },
   ],
   /** Optional: a PDF placed in /public. Remove to hide the link. */
-  resume: "/resume.pdf" as string | undefined,
+  resume: undefined as string | undefined,
 };
 
 export const profile = {
