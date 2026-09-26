@@ -100,7 +100,11 @@ export default async function Home({ params }: Props) {
                   <h3 className="font-medium">
                     {t(job.role, locale)}
                     {locale === "ar" ? "، " : ", "}
-                    {job.url ? (
+                    {job.url?.startsWith("/") ? (
+                      <Link href={href(locale, job.url)} className="link">
+                        <bdi>{job.company}</bdi>
+                      </Link>
+                    ) : job.url ? (
                       <a href={job.url} className="link" rel="noopener" target="_blank">
                         <bdi>{job.company}</bdi>
                       </a>

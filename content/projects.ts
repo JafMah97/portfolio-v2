@@ -80,6 +80,63 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "davinda",
+    year: 2026,
+    title: { en: "Frontend Developer at Davinda", ar: "مطوّر واجهات أمامية في Davinda" },
+    summary: {
+      en: "Seven months on Filter Car, a multi-tenant SaaS for car service and wash businesses.",
+      ar: "سبعة أشهر على Filter Car، منصة SaaS من نوع multi-tenant لمراكز خدمة وغسيل السيارات.",
+    },
+    role: { en: "Frontend developer, in a team with backend developers", ar: "مطوّر واجهات، ضمن فريق مع مطوّري الباك إند" },
+    client: { en: "Davinda, Latakia", ar: "Davinda، اللاذقية" },
+    stack: ["React", "JavaScript", "TanStack Query", "Tailwind CSS", "i18next", "Vite"],
+    sections: [
+      {
+        heading: { en: "Overview", ar: "نظرة عامة" },
+        body: [
+          {
+            en: "Filter Car runs the daily work of car service centers: job cards, quotations, invoices, payments, inventory and purchase orders, in Arabic and English. The code and screens are confidential, so this page has no images.",
+            ar: "تدير Filter Car العمل اليومي لمراكز خدمة السيارات: بطاقات العمل، وعروض الأسعار، والفواتير، والمدفوعات، والمخزون، وأوامر الشراء، بالعربية والإنجليزية. الكود والواجهات سرّية، لذلك لا توجد صور في هذه الصفحة.",
+          },
+        ],
+      },
+      {
+        heading: { en: "What I built", ar: "ما بنيته" },
+        body: [
+          {
+            en: "A CRUD hook factory over TanStack Query: one function creates the list, detail and mutation hooks for any resource, with shared query keys, pagination and cache invalidation.",
+            ar: "مصنع hooks فوق TanStack Query: دالة واحدة تنشئ hooks القائمة والتفاصيل والتعديل لأي مورد، مع query keys موحّدة و pagination وتحديث الكاش.",
+          },
+          {
+            en: "The permission layer: route guards, sidebar items and action buttons shown or hidden by the user's role and tenant.",
+            ar: "طبقة الصلاحيات: حماية المسارات، وإظهار عناصر القائمة الجانبية وأزرار الإجراءات أو إخفاؤها حسب دور المستخدم والمستأجر.",
+          },
+          {
+            en: "The activity log page with filters. A formatter takes the before and after values of each change and, based on the field type, translates field names, hides internal fields and formats values like dates and prices, so users see clear changes instead of raw data.",
+            ar: "صفحة سجل العمليات مع الفلترة. دالة تأخذ القيم قبل التعديل وبعده، وحسب نوع كل حقل تترجم اسمه، أو تخفي الحقول الداخلية، أو تنسّق القيم مثل التواريخ والأسعار، فيرى المستخدم تغييرات واضحة بدل بيانات خام.",
+          },
+          {
+            en: "Route-level lazy loading and code splitting, which made the first load about 20% faster.",
+            ar: "تحميل الصفحات عند الحاجة (lazy loading) وتقسيم الكود، ما جعل التحميل الأول أسرع بحوالي 20%.",
+          },
+        ],
+      },
+      {
+        heading: { en: "Team and process", ar: "الفريق وطريقة العمل" },
+        body: [
+          {
+            en: "Worked every day with the backend developers on the API. My Git and GitHub work became much more professional: branches, pull requests and resolving merge conflicts.",
+            ar: "عملت يوميًا مع مطوّري الباك إند على الـ API. وأصبح عملي على Git و GitHub أكثر احترافية: الفروع، و pull requests، وحل تعارضات الدمج.",
+          },
+          {
+            en: "Proposed splitting the single large translation file into one JSON file per module, so it is easier to maintain and causes fewer merge conflicts.",
+            ar: "اقترحت تقسيم ملف الترجمة الكبير إلى ملف JSON لكل قسم، ليصبح أسهل في الصيانة وأقل تسببًا في تعارضات الدمج.",
+          },
+        ],
+      },
+    ],
+  },
+  {
     slug: "the-deal",
     year: 2025,
     featured: true,
