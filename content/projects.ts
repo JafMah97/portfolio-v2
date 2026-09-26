@@ -84,10 +84,10 @@ export const projects: Project[] = [
     year: 2026,
     title: { en: "Frontend Developer at Davinda", ar: "مطوّر واجهات أمامية في Davinda" },
     summary: {
-      en: "Seven months on Filter Car, a multi-tenant SaaS for car service and wash businesses.",
-      ar: "سبعة أشهر على Filter Car، منصة SaaS من نوع multi-tenant لمراكز خدمة وغسيل السيارات.",
+      en: "Seven months on two products: Filter Car, a multi-tenant SaaS for car service businesses, and Evexl, a digital business card platform.",
+      ar: "سبعة أشهر على منتجين: Filter Car، منصة SaaS من نوع multi-tenant لمراكز خدمة السيارات، و Evexl، منصة بطاقات عمل رقمية.",
     },
-    role: { en: "Frontend developer, in a team with backend developers", ar: "مطوّر واجهات، ضمن فريق مع مطوّري الباك إند" },
+    role: { en: "Frontend developer, in a team with backend and QA", ar: "مطوّر واجهات، ضمن فريق مع الباك إند والاختبار" },
     client: { en: "Davinda, Latakia", ar: "Davinda، اللاذقية" },
     stack: ["React", "JavaScript", "TanStack Query", "Tailwind CSS", "i18next", "Vite"],
     sections: [
@@ -95,8 +95,8 @@ export const projects: Project[] = [
         heading: { en: "Overview", ar: "نظرة عامة" },
         body: [
           {
-            en: "Filter Car runs the daily work of car service centers: job cards, quotations, invoices, payments, inventory and purchase orders, in Arabic and English. The code and screens are confidential, so this page has no images.",
-            ar: "تدير Filter Car العمل اليومي لمراكز خدمة السيارات: بطاقات العمل، وعروض الأسعار، والفواتير، والمدفوعات، والمخزون، وأوامر الشراء، بالعربية والإنجليزية. الكود والواجهات سرّية، لذلك لا توجد صور في هذه الصفحة.",
+            en: "Filter Car runs the daily work of car service centers: job cards, quotations, invoices, payments, inventory and purchase orders, in Arabic and English. Evexl sells NFC business cards, each linked to a personal profile page. The code and screens are confidential, so this page has no images.",
+            ar: "تدير Filter Car العمل اليومي لمراكز خدمة السيارات: بطاقات العمل، وعروض الأسعار، والفواتير، والمدفوعات، والمخزون، وأوامر الشراء، بالعربية والإنجليزية. وتبيع Evexl بطاقات عمل بتقنية NFC، كل بطاقة مرتبطة بصفحة شخصية. الكود والواجهات سرّية، لذلك لا توجد صور في هذه الصفحة.",
           },
         ],
       },
@@ -108,16 +108,20 @@ export const projects: Project[] = [
             ar: "مصنع hooks فوق TanStack Query: دالة واحدة تنشئ hooks القائمة والتفاصيل والتعديل لأي مورد، مع query keys موحّدة و pagination وتحديث الكاش.",
           },
           {
-            en: "The permission layer: route guards, sidebar items and action buttons shown or hidden by the user's role and tenant.",
-            ar: "طبقة الصلاحيات: حماية المسارات، وإظهار عناصر القائمة الجانبية وأزرار الإجراءات أو إخفاؤها حسب دور المستخدم والمستأجر.",
+            en: "Role-based access: a permission hook, route guards and a wrapper that shows or hides actions, based on the permissions returned by the backend.",
+            ar: "التحكم بالصلاحيات: hook للصلاحيات، وحماية للمسارات، و wrapper يُظهر الإجراءات أو يخفيها، بناءً على الصلاحيات التي يرسلها الباك إند.",
           },
           {
-            en: "The activity log page with filters. A formatter takes the before and after values of each change and, based on the field type, translates field names, hides internal fields and formats values like dates and prices, so users see clear changes instead of raw data.",
-            ar: "صفحة سجل العمليات مع الفلترة. دالة تأخذ القيم قبل التعديل وبعده، وحسب نوع كل حقل تترجم اسمه، أو تخفي الحقول الداخلية، أو تنسّق القيم مثل التواريخ والأسعار، فيرى المستخدم تغييرات واضحة بدل بيانات خام.",
+            en: "In Evexl: subscription renewal and payment-method management (saved cards, seats), connected to the backend and a third-party payment page.",
+            ar: "في Evexl: تجديد الاشتراكات وإدارة وسائل الدفع (البطاقات المحفوظة والمقاعد)، مربوطة بالباك إند وبصفحة دفع خارجية.",
           },
           {
-            en: "Route-level lazy loading and code splitting, which made the first load about 20% faster.",
-            ar: "تحميل الصفحات عند الحاجة (lazy loading) وتقسيم الكود، ما جعل التحميل الأول أسرع بحوالي 20%.",
+            en: "The activity log page with filters, and route-level lazy loading that made the first load about 20% faster.",
+            ar: "صفحة سجل العمليات مع الفلترة، وتحميل الصفحات عند الحاجة (lazy loading) ما جعل التحميل الأول أسرع بحوالي 20%.",
+          },
+          {
+            en: "Restructured the Arabic and English translations from one unorganized object into page-based groups, with shared text under common.",
+            ar: "أعدت هيكلة ترجمات العربية والإنجليزية من كائن واحد غير منظّم إلى مجموعات حسب الصفحة، مع النصوص المشتركة ضمن common.",
           },
         ],
       },
@@ -125,12 +129,12 @@ export const projects: Project[] = [
         heading: { en: "Team and process", ar: "الفريق وطريقة العمل" },
         body: [
           {
-            en: "Worked every day with the backend developers on the API. My Git and GitHub work became much more professional: branches, pull requests and resolving merge conflicts.",
-            ar: "عملت يوميًا مع مطوّري الباك إند على الـ API. وأصبح عملي على Git و GitHub أكثر احترافية: الفروع، و pull requests، وحل تعارضات الدمج.",
+            en: "Debugged an Odoo inventory-count issue by inspecting network requests: I found the flag that separates a real zero from \"not counted\", which unblocked the backend fix.",
+            ar: "حللت مشكلة في جرد المخزون مع Odoo بفحص طلبات الشبكة: وجدت الحقل الذي يفرّق بين الصفر الحقيقي و\"لم يُجرد بعد\"، ما سمح للباك إند بإصلاحها.",
           },
           {
-            en: "Restructured the Arabic and English translations from one unorganized object into page-based groups, with shared text under common. Keys became easy to find, reuse and maintain across more than 50 modules.",
-            ar: "أعدت هيكلة ترجمات العربية والإنجليزية من كائن واحد غير منظّم إلى مجموعات حسب الصفحة، مع النصوص المشتركة ضمن common، فأصبح إيجاد المفاتيح وإعادة استخدامها وصيانتها أسهل عبر أكثر من 50 قسمًا.",
+            en: "Fixed bugs every day with the QA tester and the backend developers, joined client meetings, and helped turn requirements into frontend tasks. My Git work became much more professional along the way: branches, pull requests and merge conflicts.",
+            ar: "أصلحت الأخطاء يوميًا مع مختبر الجودة ومطوّري الباك إند، وحضرت اجتماعات مع العميل، وساعدت في تحويل المتطلبات إلى مهام للواجهة. وأصبح عملي على Git أكثر احترافية: الفروع، و pull requests، وحل تعارضات الدمج.",
           },
         ],
       },

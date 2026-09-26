@@ -10,8 +10,8 @@ export const experience: Job[] = [
     end: "2026-09",
     location: { en: "Latakia", ar: "اللاذقية" },
     description: {
-      en: "Frontend on Filter Car, a multi-tenant SaaS for car service and wash businesses: data-fetching hooks over TanStack Query, the permission layer, and Arabic/English localization. The code and screens are confidential, so they are not shown here.",
-      ar: "واجهات منصة Filter Car، نظام SaaS من نوع multi-tenant لمراكز خدمة وغسيل السيارات: طبقة جلب البيانات فوق TanStack Query، وطبقة الصلاحيات، والتعريب بالعربية والإنجليزية. الكود والواجهات سرّية، لذلك لا أعرضها هنا.",
+      en: "Frontend on two products: Filter Car, a multi-tenant SaaS for car service businesses, and Evexl, a digital business card platform. Data-fetching hooks, role-based access, payments and debugging with QA and backend.",
+      ar: "واجهات لمنتجين: Filter Car، منصة SaaS من نوع multi-tenant لمراكز خدمة السيارات، و Evexl، منصة بطاقات عمل رقمية. طبقة جلب البيانات، والصلاحيات، والدفع، وحل الأخطاء مع فريق الاختبار والباك إند.",
     },
   },
   {
