@@ -129,8 +129,8 @@ export const projects: Project[] = [
             ar: "عملت يوميًا مع مطوّري الباك إند على الـ API. وأصبح عملي على Git و GitHub أكثر احترافية: الفروع، و pull requests، وحل تعارضات الدمج.",
           },
           {
-            en: "Restructured the translation files: all keys were in one flat object, so I grouped them by page, with shared text under a common group. Finding and adding translations became much easier.",
-            ar: "أعدت تنظيم ملفات الترجمة: كانت كل المفاتيح في كائن واحد كبير بلا ترتيب، فقسمتها حسب الصفحة، ووضعت النصوص المشتركة ضمن مجموعة common. صار إيجاد الترجمات وإضافتها أسهل بكثير.",
+            en: "Restructured the Arabic and English translations from one unorganized object into page-based groups, with shared text under common. Keys became easy to find, reuse and maintain across more than 50 modules.",
+            ar: "أعدت هيكلة ترجمات العربية والإنجليزية من كائن واحد غير منظّم إلى مجموعات حسب الصفحة، مع النصوص المشتركة ضمن common، فأصبح إيجاد المفاتيح وإعادة استخدامها وصيانتها أسهل عبر أكثر من 50 قسمًا.",
           },
         ],
       },
